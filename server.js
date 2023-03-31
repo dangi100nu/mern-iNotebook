@@ -3,6 +3,8 @@ const express = require("express")
 const auth = require("./routes/auth")
 const cors = require('cors');
 const path = require("path")
+const dotenv = require("dotenv");
+dotenv.config();
 //install express
 const app = express()
 const port = process.env.PORT || 5000   //5000 kar diya kyuki 3000 pr react app chayenge
@@ -23,11 +25,11 @@ app.use("/api/notes/", require("./routes/notes.js"));
 
 //static files
 // how to configure a static file
-app.use(express.static(path.join(__dirname,"../build")));
+app.use(express.static(path.join(__dirname,"./client/build")));
  //how to access this static file
  //* means pure build folder ko access kar liya
  app.get("*", (req,res)=>{
-  res.sendFile(path.join(__dirname,"../build/index.html"))
+  res.sendFile(path.join(__dirname,"./client/build/index.html"))
  })
 
 

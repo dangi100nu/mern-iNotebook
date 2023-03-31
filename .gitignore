@@ -8,10 +8,6 @@ node_modules
 # testing
 /coverage
 
-# production
-# /build
-src
-public
 
 # misc
 .DS_Store

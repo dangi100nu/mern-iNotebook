@@ -1,5 +1,7 @@
 // install mongoose
 const mongoose = require('mongoose');
+const dotenv = require("dotenv");
+dotenv.config();
 //using esmodules : first change in package.json type:module but i am using commonjsmodules
 
 // after 6.0 version mongoose.connect use async/await and promise instead of accept callback funtion as a parameter

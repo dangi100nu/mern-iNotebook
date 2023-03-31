@@ -1,0 +1,116 @@
+i {
+    cursor: pointer;
+}
+
+section i {
+    font-size: 5rem;
+    margin-bottom: 40px;
+
+}
+.navbar {
+    padding: 1px 2px;
+    /* adjust the padding to change the height */
+    line-height: 1;
+    /* adjust the line-height to vertically center the contents */
+    background-color: black;
+}
+
+@media (min-width: 991px) {
+    .nav-link {
+        border-radius: 8px;
+    }
+}
+
+.nav-link:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+@media (max-width: 991px) {
+    .login-signup {
+        flex-direction: column;
+    }
+
+    .button-width {
+        width: 25%;
+    }
+}
+
+
+/* footer ko neeche chipkane ke liye and margin top auto footer ko de do */
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    color: white;
+    background-color: black;
+}
+
+
+/* about components */
+.about-component {
+    margin: 25px auto;
+    padding: 0 230px;
+
+}
+
+.about-component p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Emoji", "Segoe UI", Ubuntu, Roboto, sans-serif;
+    font-size: 1.1rem;
+}
+
+
+/* how ite works */
+.Overview {
+    color: black;
+    font-weight: 600;
+}
+
+/* home component */
+.home1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, #000000, #868181);
+    padding: 150px 30px;
+    color: white;
+
+}
+
+.home1 h1 {
+    font-size: 3.5rem;
+}
+
+.home1 p {
+    font-size: 1.2rem;
+}
+
+.home2 {
+    background: linear-gradient(to right, #d5d0d0, #838282);
+    margin: 100px 0;
+}
+
+
+/* media queries */
+@media (max-width: 991px) {
+    .about-component {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 565px) {
+    .home1 h1 {
+        font-size: 2.5rem;
+    }
+    .home1 p {
+        font-size: 1rem;
+    }
+}
